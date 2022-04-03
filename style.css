@@ -19,6 +19,13 @@ body{
     margin: 0 auto;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+ 
+
+
 img{
     max-width: 100%;
 }
@@ -26,6 +33,7 @@ img{
 .header{
     background: url(image/phone.jpg) no-repeat center center;
     height: 841px;
+    position: relative;
 }
 
 .block-1{
@@ -46,6 +54,37 @@ img{
 
 .imgFloat{
     float: left;
+}
+
+.wrapper_active{
+    transform: translateX(0%)!important;
+}
+
+.wrapper__burger{
+        background-color: #fff;
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        transform: translateX(-100%);
+        transition: 1s;
+}
+
+.menu__burger{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}  
+
+.menu__link{
+    padding: 10px;
+    display: block;
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
 }
 
 .menu-link{
@@ -452,13 +491,17 @@ label{
     padding-top: 66px;
 }
 
-.content-4-book{
+.contentForBook{
     padding-top: 123px;
     display: flex;
     justify-content: space-between;
 }
 
-.content-4-1{
+.swiper__active{
+    display: none!important;
+}
+
+.contentOne{
     background: url(image/hook-2.jpg) no-repeat;
     height: 583px;
     width: 322px;
@@ -536,7 +579,7 @@ label{
     line-height: 48px;
 }
 
-.content-4-1:hover{
+.contentOne:hover{
     background: url(image/hook-3.jpg) no-repeat;
     height: 634px;
     width: 350px;
@@ -688,7 +731,7 @@ label{
         justify-content: space-around;
     }
 
-    .content-4-1{
+    .contentOne{
         background: url(image/hook-2.jpg) no-repeat;
         height: 588px;
         width: 282px;
@@ -698,7 +741,7 @@ label{
         transition: all 500ms ease;
     }
 
-    .content-4-1:hover{
+    .contentOne:hover{
         width: 318px;
     }
 
@@ -788,7 +831,7 @@ label{
         }
      
         
-    .content-4-1 {
+    .contentOne {
         width: 220px;
     }
 
@@ -850,7 +893,7 @@ label{
         font-size: 16px;
     }
 
-    .content-4-1:hover{
+    .contentOne:hover{
         width: 243px;
     }
 
@@ -1012,7 +1055,15 @@ label{
         color: #7C7C7C;
     }
 
-    .content-4-1 {
+    .swiper__stop{
+        display:none!important;
+    }
+
+    .swiper__active{
+        display: block!important;
+    }
+    
+    .contentOne {
         background: url(image/hook-2.jpg) no-repeat;
         height: 583px;
         width: 322px;
@@ -1022,7 +1073,7 @@ label{
         transition: all 500ms ease;
     }
 
-    .content-4-book {
+    .peppermint  {
         padding-top: 123px;
         display: block;
     }
@@ -1230,7 +1281,7 @@ label{
         padding-bottom: 147px;
     }
 
-    .content-4-1 {
+    .contentOne {
         background: url(image/hook-2.jpg) no-repeat;
         height: 583px;
         width: 322px;
@@ -1244,7 +1295,7 @@ label{
         padding-top: 283px;
     }
 
-    .content-4-book {
+    .peppermint  {
         padding-top: 123px;
         display: block;
     }
@@ -1419,7 +1470,7 @@ label{
         width: 80%;
     }
 
-    .content-4-1 {
+    .contentOne {
         width: 220px;
     }
 
@@ -1513,6 +1564,10 @@ label{
 
         .next{
             width: 25px;
+        }
+
+        .features-content {
+            width: 253px;
         }
     }
 }

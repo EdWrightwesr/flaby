@@ -7,10 +7,23 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Merriweather+Sans:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Merriweather+Sans:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
     <title>Document</title>
 </head>
 <body>
     <div class="header ">
+        <div class="wrapper">
+            <div class="wrapper__burger">
+                <ul class="menu__burger">
+                    <li class="menu__link"><a href="" class="menu__link">Home</a></li>
+                    <li class="menu__link"><a href="" class="menu__link">Services</a></li>
+                    <li class="menu__link"><a href="" class="menu__link">Portfolio</a></li>
+                    <li class="menu__link"><a href="" class="menu__link">Blog</a></li>
+                    <li class="menu__link"><a href="" class="menu__link">Contact Us</a></li>
+                    <li class="menu__link"><a href="" class="menu__link">Login</a></li>
+                </ul>
+            </div>
+        </div>    
         <div class="header-content container">
             <div class="block-1">              
                 <a href=""><img class="logo" src="image/logo.png" alt=""></a>
@@ -34,7 +47,7 @@
                     <div class="imglearn"><a href="" class="learn"><img class="img__learn" src="image/learn.png" alt=""></a></div>
                 </div>
             </div> 
-        </div>      
+        </div>  
     </div>
     <div class="content container">
         <div class="content-welcome container">
@@ -165,41 +178,80 @@
                 <p class="welcome welcome-all-1">Get Idea About</p>
                 <h2 class="service">Pricing plan</h2>
                 <div class="border"></div>
-                <div class="content-4-book">
-                    <div class="content-4-1 slide_active ">
-                        <img class="img-4" src="image/book.png" alt="">
-                        <p class="student">Student</p>
-                        <p class="mo"><span class="make">$</span><span class="fifthy">39</span>/mo</p>
-                        <p class="store">6 GB storage</p>
-                        <p class="store">Fast Brandwidht</p>
-                        <p class="cust">Responsive</p>
-                        <p class="cust dop">Customization</p>
-                        <a href="" class="sign">sign up</a>
+                <div class='swiper__stop'>
+                    <div class="contentForBook">
+                        <div class="contentOne slide_active ">
+                            <img class="img-4" src="image/book.png" alt="">
+                            <p class="student">Student</p>
+                            <p class="mo"><span class="make">$</span><span class="fifthy">39</span>/mo</p>
+                            <p class="store">6 GB storage</p>
+                            <p class="store">Fast Brandwidht</p>
+                            <p class="cust">Responsive</p>
+                            <p class="cust dop">Customization</p>
+                            <a href="" class="sign">sign up</a>
+                        </div>
+                        <div class="contentOne">
+                            <img class="img-4" src="image/bag.png" alt="">
+                            <p class="student">Professional</p>
+                            <p class="mo"><span class="make">$</span><span class="fifthy">59</span>/mo</p>
+                            <p class="store">6 GB storage</p>
+                            <p class="store">Fast Brandwidht</p>
+                            <p class="store">Responsive</p>
+                            <p class="cust dop">Customization</p>
+                            <a href="" class="sign">sign up</a>
+                        </div>
+                        <div class="contentOne">
+                            <img class="img-4" src="image/shopping.png" alt="">
+                            <p class="student">Student</p>
+                            <p class="mo"><span class="make">$</span><span class="fifthy">99</span>/mo</p>
+                            <p class="store">6 GB storage</p>
+                            <p class="store">Fast Brandwidht</p>
+                            <p class="store">Responsive</p>
+                            <p class="store dop">Customization</p>
+                            <a href="" class="sign">sign up</a>
+                        </div>
                     </div>
-                    <div class="content-4-1 hidden">
-                        <img class="img-4" src="image/bag.png" alt="">
-                        <p class="student">Professional</p>
-                        <p class="mo"><span class="make">$</span><span class="fifthy">59</span>/mo</p>
-                        <p class="store">6 GB storage</p>
-                        <p class="store">Fast Brandwidht</p>
-                        <p class="store">Responsive</p>
-                        <p class="cust dop">Customization</p>
-                        <a href="" class="sign">sign up</a>
-                    </div>
-                    <div class="content-4-1 hidden">
-                        <img class="img-4" src="image/shopping.png" alt="">
-                        <p class="student">Student</p>
-                        <p class="mo"><span class="make">$</span><span class="fifthy">99</span>/mo</p>
-                        <p class="store">6 GB storage</p>
-                        <p class="store">Fast Brandwidht</p>
-                        <p class="store">Responsive</p>
-                        <p class="store dop">Customization</p>
-                        <a href="" class="sign">sign up</a>
-                    </div>
-
                 </div>
-
-
+                <div class='swiper swiper__active'>
+                    <div class=" swiper-wrapper contentForBook">
+                        <div class="swiper-slide">
+                            <div class="contentOne slide_active">
+                                <img class="img-4" src="image/book.png" alt="">
+                                <p class="student">Student</p>
+                                <p class="mo"><span class="make">$</span><span class="fifthy">39</span>/mo</p>
+                                <p class="store">6 GB storage</p>
+                                <p class="store">Fast Brandwidht</p>
+                                <p class="cust">Responsive</p>
+                                <p class="cust dop">Customization</p>
+                                <a href="" class="sign">sign up</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">   
+                            <div class="contentOne">
+                                <img class="img-4" src="image/bag.png" alt="">
+                                <p class="student">Professional</p>
+                                <p class="mo"><span class="make">$</span><span class="fifthy">59</span>/mo</p>
+                                <p class="store">6 GB storage</p>
+                                <p class="store">Fast Brandwidht</p>
+                                <p class="store">Responsive</p>
+                                <p class="cust dop">Customization</p>
+                                <a href="" class="sign">sign up</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="contentOne">
+                                <img class="img-4" src="image/shopping.png" alt="">
+                                <p class="student">Student</p>
+                                <p class="mo"><span class="make">$</span><span class="fifthy">99</span>/mo</p>
+                                <p class="store">6 GB storage</p>
+                                <p class="store">Fast Brandwidht</p>
+                                <p class="store">Responsive</p>
+                                <p class="store dop">Customization</p>
+                                <a href="" class="sign">sign up</a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -274,8 +326,18 @@
             <div class="block__align"><p class="black">Sourabh Barua</p></div>
         </div>
     </div>
-
+    <script src="swiper-bundle.min.js"></script>
+    <script src="main.js"></script>  
     <script>
+        let menuElem = document.querySelector('.burger');
+        let titleElem = document.querySelector('.wrapper__burger');
+
+        menuElem.onclick = function(e) {
+            event.preventDefault();
+            titleElem.classList.toggle('wrapper_active');
+        };
+
+
         let next = document.querySelector('.nextText');
         let previous = document.querySelector('.previousText');
         let currentSlide = 0;
@@ -305,6 +367,11 @@
             slides[currentSlide].className = 'all-content slide showing';
         }
 
+        
+        const swiper = new Swiper('.swiper', {
+            });
     </script>
+    
+    
 </body>
 </html> 
